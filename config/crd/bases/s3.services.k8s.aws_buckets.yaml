@@ -34,7 +34,9 @@ spec:
           metadata:
             type: object
           spec:
-            description: BucketSpec defines the desired state of Bucket
+            description: "BucketSpec defines the desired state of Bucket. \n In terms
+              of implementation, a Bucket is a resource. An Amazon S3 bucket name
+              is globally unique, and the namespace is shared by all AWS accounts."
             properties:
               acl:
                 description: The canned ACL to apply to the bucket.

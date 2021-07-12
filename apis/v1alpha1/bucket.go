@@ -20,7 +20,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-// BucketSpec defines the desired state of Bucket
+// BucketSpec defines the desired state of Bucket.
+//
+// In terms of implementation, a Bucket is a resource. An Amazon S3 bucket name
+// is globally unique, and the namespace is shared by all AWS accounts.
 type BucketSpec struct {
 	// The canned ACL to apply to the bucket.
 	ACL *string `json:"acl,omitempty"`
